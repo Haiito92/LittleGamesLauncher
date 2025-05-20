@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "LittleGamesLauncher (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "LittleGamesLauncher (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
