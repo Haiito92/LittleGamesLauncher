@@ -16,14 +16,20 @@
         </Grid.ColumnDefinitions>
         
         <!--Navigation Panel-->
-        <Grid Grid.Column="0">
-            
+        <Grid Grid.Column="0" Background="{StaticResource MainColor}">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Click="OnHomeButtonClick">
+                    <FontIcon Glyph="{StaticResource HomeIcon}"/>
+                </Button>
+                <Button Click="OnLibraryButtonClick">
+                    <FontIcon Glyph="{StaticResource ViewAllIcon}"/>
+                </Button>
+            </StackPanel>
         </Grid>
 
-        <!--Main Panel-->
-        <Grid Grid.Column="1">
+        <!--Main Frame-->
+        <Frame x:Name="MainFrame" Grid.Column="1">
             
-        </Grid>
-        
+        </Frame>
     </Grid>
 </Window>

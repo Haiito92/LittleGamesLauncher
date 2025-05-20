@@ -22,7 +22,6 @@
             <Color x:Key="NeutralColor">#FFF5E1</Color>
             <!--#endregion-->
         </ResourceDictionary>
-        
     </ResourceDictionary.ThemeDictionaries>
     
     <!--#region Colors-->

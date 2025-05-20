@@ -3,6 +3,7 @@ using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Windows.UI;
 using Windows.Graphics;
+using LittleGamesLauncher.Views.Pages;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -33,6 +34,8 @@ namespace LittleGamesLauncher.Views.Windows
             {
                 rootElement.ActualThemeChanged += OnThemeChanged;
             }
+
+            MainFrame.Navigate(typeof(HomePage));
         }
 
         private void SetTitleBarColors()
@@ -40,11 +43,6 @@ namespace LittleGamesLauncher.Views.Windows
             AppWindowTitleBar titleBar = AppWindow.TitleBar;
 
             if (titleBar == null) return;
-
-            if (Application.Current.Resources.TryGetValue("SecondaryColor", out object secondaryColor))
-            {
-                titleBar.ButtonBackgroundColor = (Color)secondaryColor;
-            }
 
             if (Application.Current.Resources.TryGetValue("HoverSecondaryColor", out object hoverSecondaryColor))
             {
@@ -63,12 +61,23 @@ namespace LittleGamesLauncher.Views.Windows
                 titleBar.ButtonPressedForegroundColor = (Color)neutralColor;
             }
 
+            titleBar.ButtonBackgroundColor = Colors.Transparent;
             titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
         }
 
         private void OnThemeChanged(FrameworkElement sender, object args)
         {
             SetTitleBarColors();
+        }
+
+        private void OnHomeButtonClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(typeof(HomePage));
+        }
+
+        private void OnLibraryButtonClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(typeof(LibraryPage));
         }
     }   
 }
