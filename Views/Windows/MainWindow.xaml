@@ -10,6 +10,20 @@
     Title="MainWindow">
 
     <Grid Background="{ThemeResource SecondaryColor}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="64"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!--Navigation Panel-->
+        <Grid Grid.Column="0">
+            
+        </Grid>
 
+        <!--Main Panel-->
+        <Grid Grid.Column="1">
+            
+        </Grid>
+        
     </Grid>
 </Window>

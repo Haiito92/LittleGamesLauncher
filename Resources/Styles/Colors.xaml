@@ -8,6 +8,8 @@
         <ResourceDictionary x:Key="Light">
             <!--#region Colors-->
             <Color x:Key="SecondaryColor">#FFF5E1</Color>
+            <Color x:Key="HoverSecondaryColor">#E6D9B9</Color>
+            <Color x:Key="PressedSecondaryColor">#CFC19A</Color>
             <Color x:Key="NeutralColor">#2E2E2E</Color>
             <!--#endregion-->
         </ResourceDictionary>
@@ -15,6 +17,8 @@
         <ResourceDictionary x:Key="Dark">
             <!--#region Colors-->
             <Color x:Key="SecondaryColor">#2E2E2E</Color>
+            <Color x:Key="HoverSecondaryColor">#3B3B3B</Color>
+            <Color x:Key="PressedSecondaryColor">#474747</Color>
             <Color x:Key="NeutralColor">#FFF5E1</Color>
             <!--#endregion-->
         </ResourceDictionary>
